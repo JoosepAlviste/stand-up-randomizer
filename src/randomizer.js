@@ -41,14 +41,22 @@
     const isLast = () => nextIndex === people.length - 1;
 
     const render = () => {
-      $container.innerHTML = `
-        <div class="randomizer-name">
-          ${people[nextIndex]}
-        </div>
-        <button id="randomizer-next-btn" class="randomizer-button">
-          ${isLast() ? 'Done' : `Next: ${people[nextIndex + 1]}`}
-        </button>
-      `;
+      const $nameContainer = document.createElement('div');
+      $nameContainer.className = 'randomizer-name';
+      $nameContainer.appendChild(document.createTextNode(people[nextIndex]));
+
+      const $button = document.createElement('button');
+      $button.id = 'randomizer-next-btn';
+      $button.className = 'randomizer-button';
+      $button.appendChild(
+        document.createTextNode(
+          isLast() ? 'Done' : `Next: ${people[nextIndex + 1]}`
+        )
+      );
+
+      $container.innerHTML = '';
+      $container.appendChild($nameContainer);
+      $container.appendChild($button);
     }
 
     document.body.appendChild($container);
