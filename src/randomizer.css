@@ -1,0 +1,31 @@
+.randomizer-container {
+    position: fixed;
+    transform: translateX(-50%);
+    top: 1rem;
+    left: 50%;
+    z-index: 9999;
+    display: flex;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px 0px rgba(9, 30, 66, 0.25);
+    color: rgb(80, 95, 121);
+    align-items: center;
+    padding: 8px;
+}
+
+.randomizer-next-btn {
+    height: 3rem;
+    margin-left: 8px;
+    margin-right: 8px;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 3px;
+    color: #505f79;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px 10px;
+}
+
+.randomizer-next-btn:hover {
+    background: #ebecf0;
+}

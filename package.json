@@ -1,0 +1,10 @@
+{
+  "name": "standup-randomizer",
+  "version": "1.0.0",
+  "main": "randomizer.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "web-ext run --firefox=/Applications/Firefox\\ Developer\\ Edition.app/Contents/MacOS/firefox-bin",
+    "build": "web-ext build --overwrite-dest"
+  }
+}
