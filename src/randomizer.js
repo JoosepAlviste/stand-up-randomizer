@@ -45,7 +45,7 @@
         <div class="randomizer-name">
           ${people[nextIndex]}
         </div>
-        <button id="randomizer-next-btn" class="randomizer-next-btn">
+        <button id="randomizer-next-btn" class="randomizer-button">
           ${isLast() ? 'Done' : `Next: ${people[nextIndex + 1]}`}
         </button>
       `;

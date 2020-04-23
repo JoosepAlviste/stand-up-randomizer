@@ -2,17 +2,28 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link href="options.css" rel="stylesheet" type="text/css" />
     </head>
-    <body>
-        <form>
+    <body class="randomizer-body">
+        <form class="randomizer-form">
             <label>
-                Team members (each name on a new line)<br />
-                <textarea style="width: 100%;" rows="10" id="members"></textarea>
+                <div class="randomizer-label">Team members (each name on a new line)</div>
+                <textarea
+                    class="randomizer-textarea"
+                    rows="10"
+                    id="members"
+                    placeholder="Add each member on a new line..."
+                ></textarea>
             </label>
             <br />
-            <button type="submit">Save</button>
+            <button
+                class="randomizer-button"
+                id="randomizer-button"
+                type="submit"
+            >
+                Save
+            </button>
         </form>
-        <div id="messages"></div>
         <script src="options.js"></script>
     </body>
 </html>
